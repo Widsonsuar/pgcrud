@@ -1,6 +1,9 @@
 <?php
 include_once "conexion.php";
-$sentencia = $base_de_datos->query("SELECT empleadoid, nombre, apellido, fecha_nac FROM empleados ORDER BY empleadoid");
+$buscar = isset($_GET['buscar']) ? $_GET['buscar'] : '';
+$sentencia = $base_de_datos->prepare("SELECT empleadoid, nombre, apellido, fecha_nac FROM empleados WHERE nombre LIKE :buscar OR apellido LIKE :buscar ORDER BY empleadoid");
+$sentencia->bindParam(':buscar', $buscar, PDO::PARAM_STR);
+$sentencia->execute();
 $empleado = $sentencia->fetchAll(PDO::FETCH_OBJ);
 ?>
 <!DOCTYPE html>

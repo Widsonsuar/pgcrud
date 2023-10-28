@@ -81,7 +81,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="encabezado.php">Inicio</a></li>
+            <li><a href="agregar.php">Agregar un Empleado</a></li>
             <li><a href="listar.php">Empleados</a></li>
             <li><a href="proveedores.php">Proveedores</a></li>
             <li><a href="contacto.php">Contacto</a></li>

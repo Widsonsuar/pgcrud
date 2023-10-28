@@ -1,0 +1,101 @@
+
+    /* Resetear los márgenes y el padding para un aspecto más limpio */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Estilo general para el cuerpo de la página */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    /* Estilo para el contenedor principal */
+    .container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Estilo para la tabla de empleados */
+    .table {
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    .table th,
+    .table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .table th {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    /* Estilos para los botones de editar y eliminar */
+    .btn {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .btn-warning {
+        background-color: #ffc107;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+
+    /* Estilo para el botón de regresar */
+    .btn-primary {
+        background-color: #007bff;
+        margin-top: 20px;
+    }
+
+    /* Estilo para el formulario de agregar empleado */
+    .page-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Utiliza la misma clase form-control para las cajas de texto */
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Estilo para el botón de guardar */
+    .btn-success {
+        background-color: #28a745;
+    }
+
+    /* Estilo para el botón de cancelar */
+    .btn-cancel {
+        background-color: #dc3545;
+    }
+
+    /* Agrega cualquier estilo adicional que necesites aquí */
+    /* Agrega este estilo para las cajas de texto más pequeñas */
+    .small-input {
+        width: 250px; /* Ancho deseado para las cajas de texto */
+        /* Otros estilos si los necesitas */
+    }
+
